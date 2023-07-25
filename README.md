@@ -1,5 +1,5 @@
 # VICET
 Velocity correcting Iterative Compact Ellipsoidal Transform
 
-![](https://github.com/mcdermatt/ICET/blob/main/demo1.gif)
+![](https://github.com/mcdermatt/VICET/blob/main/transOnlyBox.gif)
 
