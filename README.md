@@ -18,7 +18,7 @@ VICET is capable of jointly estimating the rigid transform and relative motion d
 
 ## Scan to HD Map Localization
 
-Unlike existing techniques, VICET does not require a history of past motion to perform distortion correction.
-This means that VICET is capable of accurately aligning higly distorted point clouds against an HD Map. 
-
 ![](https://github.com/mcdermatt/VICET/blob/main/scan2map1.gif)
+
+Unlike existing techniques, VICET does not require a history of past motion to perform distortion correction.
+This means that VICET is capable of accurately aligning a single higly distorted point cloud against an HD Map.  
