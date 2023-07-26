@@ -17,9 +17,8 @@ VICET is capable of jointly estimating the rigid transform and relative motion d
 </p>
 
 
-| (a → a), (a → b)                               |  (a → a), (a → c)                                |
 | ---------------------------------------------- | ------------------------------------------------ |
-|    <img src="/transOnlyBox.gif" width="400" /> | <img src="/transAndRotateBox.gif" width="400" /> |
+|    <img src="/transOnlyBox.gif" width="400" /> | <img src="/transAndRotateBoxV2.gif" width="400" /> |
 
 ## Scan to HD Map Localization
 
