@@ -12,8 +12,8 @@ and composite translation and rotation (a → c).
 VICET is capable of jointly estimating the rigid transform and relative motion distortion states between two point clouds to accurately align complex surfaces. 
 
 <p float="left">
-  <img src="/transOnlyBox.gif" width="500" />
-  <img src="/transAndRotateBoxV2.gif" width="500" /> 
+  <img src="/transOnlyBox.gif" width="400" />
+  <img src="/transAndRotateBoxV2.gif" width="400" /> 
 </p>
 
 ## Scan to HD Map Localization
