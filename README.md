@@ -1,5 +1,5 @@
 # VICET
-$\textbf{V}$elocity corrected $textbf{I}$terative $textbf{C}$ompact $textbf{E}$llipsoidal $textbf{T}$ransform
+**V**elocity corrected **I**terative **C**ompact **E**llipsoidal **T**ransform
 
 ## Motion Distortion
 
@@ -11,8 +11,10 @@ and composite translation and rotation (a → c).
 
 VICET is capable of jointly estimating the rigid transform and relative motion distortion states between two point clouds to accurately align complex surfaces. 
 
-| ![](https://github.com/mcdermatt/VICET/blob/main/transOnlyBox.gif)  | ![](https://github.com/mcdermatt/VICET/blob/main/transAndRotateBoxV2.gif) |
-
+<p float="left">
+  <img src="/transOnlyBox.gif" width="100" />
+  <img src="/transAndRotateBoxV2.gif" width="100" /> 
+</p>
 
 ## Scan to HD Map Localization
 
