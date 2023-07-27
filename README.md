@@ -27,4 +27,8 @@ As we demonstrate in our paper, this allows VICET to achieve signficantly higher
 ## Bounding Error in LIDAR Odometry
 
 Consider the case below where a new scene is being explored with a LIDAR sensor. Relative distortion between the two clouds makes it impossible to align all world features in both scans.
-Without an a priori model of the enviornment, it is impossible to determine which of the two scans is actually representative of the real scene. 
+Without an a priori model of the enviornment, it is unclear which of the two scans is actually representative of the real world as there is not enough information in the two scans alone to determine the true structure of the surroundingg scene.
+
+![](https://github.com/mcdermatt/VICET/blob/main/combinedDistortionMatchNoGround.jpg
+
+Relative motion distorion states between the two point clouds (obtained from VICET) can provide an upper bound on position error when registering the two scans.       
