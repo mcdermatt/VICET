@@ -10,6 +10,8 @@ and composite translation and rotation (a → c) over the course of one scan per
 ![](https://github.com/mcdermatt/VICET/blob/main/wideFig1.jpg)
 
 VICET is capable of jointly estimating both the rigid transform and the motion distortion compensation required to fit a distorted scan to a reference point cloud. 
+The "Rigid Transform" states represent the difference in pose between the origin of the first point cloud and the keyframe scan and the origin of the new scan. 
+The "Motion Correction" states estimated by VICET represent inferred motion of the sensor during the recording of the second scan.
 
 <p float="left">
   <img src="/transOnlyBox.gif" width="400" />
@@ -27,8 +29,14 @@ As we demonstrate in our paper, this allows VICET to achieve signficantly higher
 ## Bounding Error in LIDAR Odometry
 
 Consider the case below where a new scene is being explored with a LIDAR sensor. Relative distortion between the two clouds makes it impossible to align all world features in both scans.
-Without an a priori model of the enviornment, it is unclear which of the two scans is actually representative of the real world as there is not enough information in the two scans alone to determine the true structure of the surroundingg scene.
+Without an a priori model of the enviornment, it is unclear which of the two scans is actually representative of the real world as there is not enough information in the two scans alone to determine the true structure of the surrounding scene.
 
 ![](https://github.com/mcdermatt/VICET/blob/main/combinedDistortionMatchNoGround.jpg)
 
-Relative motion distorion states between the two point clouds (obtained from VICET) can provide an upper bound on position error when registering the two scans.       
+Relative motion distorion states between the two point clouds (obtained from VICET) can provide an upper bound on position error when registering the two scans.    
+In short, this is because each component of the motion distortion vector represents how much the associated component in the rigid transfrom can "rattle around" when close to a correct solution.   
+
+The GIF below shows VICET transforming a new scan to fit the keyframe scan. The simulation then resets and VICET transforms the keyframe scan to align with the new scan.
+Note how the estimated distortion states between the two clouds share simiar values at convergence, however with flipped signs.
+
+![](https://github.com/mcdermatt/VICET/blob/main/forwardAndReverse.gif)
