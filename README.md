@@ -12,6 +12,7 @@ and composite translation and rotation (a → c) over the course of one scan per
 VICET is capable of jointly estimating both the rigid transform and the motion distortion compensation required to fit a distorted scan to a reference point cloud. 
 The "Rigid Transform" states represent the difference in pose between the origin of the keyframe scan and the origin of the new scan. 
 The "Motion Correction" states estimated by VICET represent the apparent differences in the motion of the sensor during the recording of the second scan relative to the first. 
+Correctly estimating these 12 parameters allows a distorted scan to be rectified to properly align with a keyframe scan.
 
 <p float="left">
   <img src="/transOnlyBox.gif" width="400" />
