@@ -24,7 +24,7 @@ Correctly estimating these 12 parameters allows a distorted scan to be rectified
 ![](https://github.com/mcdermatt/VICET/blob/main/scan2map1.gif)
 
 One useful application of VICET is in the task of registering a raw distorted point cloud to an undistorted HD Map.   
-Unlike existing techniques, VICET does not require a history of past motion or measurements from an external sensor to align the new point cloud.
+Unlike existing techniques, VICET does not require a history of past motion or measurements from an external sensor to compensate for motion distortion when aligning the new point cloud.
 As we demonstrate in our paper, this allows VICET to achieve signficantly higher localization accuracy than rigid point cloud registration methods like NDT or ICP.  
 
 ## Bounding Error in LIDAR Odometry
@@ -40,6 +40,11 @@ In short, this is because each component of the motion distortion vector represe
 
 This uncertainty is demonstrated in the GIFs below. On the left, the blue scan is undistorted to match the red, and on the right the red cloud is undistorted to match the blue.
 Note how the estimated distortion states between the two cases share simiar values at convergence, however with flipped signs.
+
+<p float="left">
+  <img src="/blueToRed.gif" width="400" />
+  <img src="/redToBlue.gif" width="400" /> 
+</p>
 
 <p float="left">
   <img src="/blueToRedCropped.gif" width="400" />
