@@ -43,5 +43,5 @@ Note how the estimated distortion states between the two cases share simiar valu
 
 <p float="left">
   <img src="/blueToRed.gif" width="400" />
-  <img src="/redToBlue" width="400" /> 
+  <img src="/redToBlue.gif" width="400" /> 
 </p>
