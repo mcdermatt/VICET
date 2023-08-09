@@ -42,6 +42,6 @@ This uncertainty is demonstrated in the GIFs below. On the left, the blue scan i
 Note how the estimated distortion states between the two cases share simiar values at convergence, however with flipped signs.
 
 <p float="left">
-  <img src="/blueToRed.gif" width="400" />
-  <img src="/redToBlue.gif" width="400" /> 
+  <img src="/blueToRedCropped.gif" width="400" />
+  <img src="/redToBlueCropped.gif" width="400" /> 
 </p>
