@@ -7,7 +7,7 @@ A mechanically rotating LIDAR unit will produce a distorted representation of th
 Consider the figure below which shows the different raw point clouds produced by static motion (a → a), forward linear motion (a → b), 
 and composite translation and rotation (a → c) over the course of one scan period.   
 
-![](https://github.com/mcdermatt/VICET/blob/main/wideFig1.jpg)
+![](https://github.com/mcdermatt/VICET/blob/main/gifs/wideFig1.jpg)
 
 VICET is capable of jointly estimating both the rigid transform and the relative motion correction required to fit a distorted scan to a reference point cloud. 
 The "Rigid Transform" states represent the difference in pose between the origin of the keyframe scan and the origin of the new scan. 
@@ -15,13 +15,13 @@ The "Motion Correction" states estimated by VICET represent the apparent differe
 Correctly estimating these 12 parameters allows a distorted scan to be rectified to properly align with a keyframe scan.
 
 <p float="left">
-  <img src="/transOnlyBox.gif" width="400" />
-  <img src="/transAndRotateBoxV2.gif" width="400" /> 
+  <img src="gifs/transOnlyBox.gif" width="400" />
+  <img src="gifs/transAndRotateBoxV2.gif" width="400" /> 
 </p>
 
 ## Scan to HD Map Localization
 
-![](https://github.com/mcdermatt/VICET/blob/main/scan2map1.gif)
+![](https://github.com/mcdermatt/VICET/blob/main/gifs/scan2map1.gif)
 
 VICET is particularly useful in the task of registering a raw distorted point cloud to an undistorted HD Map.   
 Motion of the sensor during the period of a LIDAR scan will stretch the resulting point cloud. Rigid scan registration techniques fail to account for this stretching and as a result will produce biased localization estimates. 
