@@ -23,30 +23,8 @@ Correctly estimating these 12 parameters allows a distorted scan to be rectified
 
 ![](https://github.com/mcdermatt/VICET/blob/main/scan2map1.gif)
 
-One useful application of VICET is in the task of registering a raw distorted point cloud to an undistorted HD Map.   
-Unlike existing techniques, VICET does not require a history of past motion or measurements from an external sensor to compensate for motion distortion when aligning the new point cloud.
+VICET is particularly useful in the task of registering a raw distorted point cloud to an undistorted HD Map.   
+Motion of the sensor during the period of a LIDAR scan will stretch the resulting point cloud. Rigid scan registration techniques fail to account for this stretching and as a result will produce biased localization estimates. 
+Strategies exist to account for motion distortion in point clouds, however they rely on either external sensor information or a sequence of multiple LIDAR scans to account for distortion. VICET is unique in that it can solve for both the rigid trnansform and motion distortion states required to properly align a distorted point cloud with a reference scan.
 As we demonstrate in our paper, this allows VICET to achieve signficantly higher localization accuracy than rigid point cloud registration methods like NDT or ICP.  
-
-## Bounding Error in LIDAR Odometry
-
-A second application of VICET is in aligning a distorted new LIDAR scan against a distorted reference cloud.
-Consider the case below where a new scene is being explored with a LIDAR sensor. Relative distortion between the two clouds makes it impossible to align all world features in both scans.
-Without an a priori model of the enviornment, it is unclear which of the two scans is actually representative of the real world as there is not enough information in the two scans alone to determine the true structure of the surrounding scene.
-
-![](https://github.com/mcdermatt/VICET/blob/main/combinedDistortionMatchNoGround.jpg)
-
-Relative motion distorion states between the two point clouds (obtained from VICET) can provide an upper bound on position error when registering the two scans.    
-In short, this is because each component of the motion distortion vector represents how much the associated component in the rigid transfrom can "rattle around" when close to a correct solution.   
-
-This uncertainty is demonstrated in the GIFs below. On the left, the blue scan is undistorted to match the red, and on the right the red cloud is undistorted to match the blue.
-Note how the estimated distortion states between the two cases share simiar values at convergence, however with flipped signs.
-
-<p float="left">
-  <img src="/blueToRed.gif" width="400" />
-  <img src="/redToBlue.gif" width="400" /> 
-</p>
-
-<p float="left">
-  <img src="/blueToRedCropped.gif" width="400" />
-  <img src="/redToBlueCropped.gif" width="400" /> 
 </p>
