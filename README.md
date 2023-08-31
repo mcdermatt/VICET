@@ -15,8 +15,8 @@ The "Motion Correction" states estimated by VICET represent the apparent differe
 Correctly estimating these 12 parameters allows a distorted scan to be rectified to properly align with a keyframe scan.
 
 <p float="left">
-  <img src="gifs/transOnlyBox.gif" width="400" />
-  <img src="gifs/transAndRotateBoxV2.gif" width="400" /> 
+  <img src="VICET/gifs/transOnlyBox.gif" width="400" />
+  <img src="VICET/gifs/transAndRotateBoxV2.gif" width="400" /> 
 </p>
 
 ## Scan to HD Map Localization
