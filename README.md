@@ -28,3 +28,17 @@ Motion of the sensor during the period of a LIDAR scan will stretch the resultin
 Strategies exist to account for motion distortion in point clouds, however they rely on either external sensor information or a sequence of multiple LIDAR scans to account for distortion. VICET is unique in that it can solve for both the rigid trnansform and motion distortion states required to properly align a distorted point cloud with a reference scan.
 As we demonstrate in our paper, this allows VICET to achieve signficantly higher localization accuracy than rigid point cloud registration methods like NDT or ICP.  
 </p>
+
+## Cite VICET
+
+Thank you for citing our work if you have used any of our code: 
+
+[Correcting Motion Distortion for LIDAR HD-Map Localization](https://arxiv.org/pdf/2308.13694.pdf) 
+```
+@article{mcdermott2023correcting,
+  title={Correcting Motion Distortion for LIDAR HD-Map Localization},
+  author={McDermott, Matthew and Rife, Jason},
+  journal={arXiv preprint arXiv:2308.13694},
+  year={2023}
+}
+
