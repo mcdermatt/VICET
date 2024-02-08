@@ -35,10 +35,16 @@ Thank you for citing our work if you have used any of our code:
 
 [Correcting Motion Distortion for LIDAR HD-Map Localization](https://arxiv.org/pdf/2308.13694.pdf) 
 ```
-@article{mcdermott2023correcting,
-  title={Correcting Motion Distortion for LIDAR HD-Map Localization},
+@ARTICLE{10373094,
   author={McDermott, Matthew and Rife, Jason},
-  journal={arXiv preprint arXiv:2308.13694},
-  year={2023}
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Correcting Motion Distortion for LIDAR Scan-to-Map Registration},
+  year={2024},
+  volume={9},
+  number={2},
+  pages={1516-1523},
+  keywords={Laser radar;Distortion;Point cloud compression;Image sensors;Distortion measurement;Stators;Transforms;Localization;SLAM;range sensing},
+  doi={10.1109/LRA.2023.3346757}
 }
+
 ```
