@@ -33,18 +33,16 @@ As we demonstrate in our paper, this allows VICET to achieve signficantly higher
 
 Thank you for citing our work if you have used any of our code: 
 
-[Correcting Motion Distortion for LIDAR HD-Map Localization](https://arxiv.org/pdf/2308.13694.pdf) 
+[Correcting Motion Distortion for LIDAR HD-Map Localization](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10373094) 
 ```
-@ARTICLE{10373094,
-  author={McDermott, Matthew and Rife, Jason},
-  journal={IEEE Robotics and Automation Letters}, 
+@article{mcdermott2023correcting,
   title={Correcting Motion Distortion for LIDAR Scan-to-Map Registration},
-  year={2024},
+  author={McDermott, Matthew and Rife, Jason},
+  journal={IEEE Robotics and Automation Letters},
+  year={2023},
   volume={9},
   number={2},
   pages={1516-1523},
-  keywords={Laser radar;Distortion;Point cloud compression;Image sensors;Distortion measurement;Stators;Transforms;Localization;SLAM;range sensing},
-  doi={10.1109/LRA.2023.3346757}
+  publisher={IEEE}
 }
-
 ```
